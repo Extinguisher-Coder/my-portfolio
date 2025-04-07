@@ -1,0 +1,187 @@
+/* Footer.css */
+
+/* General styles for footer */
+.footer {
+    background-color: #31353a;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+    border-top: 1px solid white;
+    font-family: 'Poppins', sans-serif; /* Apply the Poppins font */
+  }
+  
+  /* Container to hold all footer content */
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  /* Footer about section */
+  .footer-about {
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .footer-about h3 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .footer-about p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ccc;
+  }
+  
+  .footer-about a {
+    color: #EF4444;
+    text-decoration: none;
+  }
+  
+  .footer-about a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer links section */
+  .footer-links {
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .footer-links h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #EF4444;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 5px 0; /* Adjusted margin for smaller space */
+  }
+  
+  .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px; /* Reduced font size for li text */
+  }
+  
+  .footer-links ul li a:hover {
+    color: #EF4444;
+  }
+  
+  /* Social media icons */
+  .footer-social {
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #EF4444;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #EF4444;
+  }
+  
+  /* Footer bottom section (copyright) */
+  .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  /* Responsive styles for different screen sizes */
+  
+  /* Mobile-first design (default for small screens) */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-about h3 {
+      font-size: 20px;
+    }
+  
+    .footer-links ul li {
+      margin: 5px 0;
+    }
+  
+    .footer-links ul li a {
+      font-size: 12px; /* Reduced font size for mobile */
+    }
+  
+    .social-icons a {
+      font-size: 20px;
+    }
+  }
+  
+  /* Tablet and larger screen sizes (768px and above) */
+  @media (min-width: 768px) {
+    .footer-about,
+    .footer-links,
+    .footer-social {
+      text-align: center;
+    }
+  
+    .footer-about h3 {
+      font-size: 22px;
+    }
+  
+    .footer-links ul li a {
+      font-size: 14px; /* Default font size for tablet */
+    }
+  
+    .social-icons a {
+      font-size: 24px;
+    }
+  }
+  
+  /* Larger screens (1024px and above) */
+  @media (min-width: 1024px) {
+    .footer-about h3 {
+      font-size: 24px;
+    }
+  
+    .footer-links ul li a {
+      font-size: 16px; /* Default font size for larger screens */
+    }
+  
+    .social-icons a {
+      font-size: 26px;
+    }
+  }
+  

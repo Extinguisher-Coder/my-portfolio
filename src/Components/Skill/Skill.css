@@ -1,0 +1,124 @@
+/* Skill.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to left, #EF4444, #31353a);
+  color: #333;
+}
+
+.skill-container {
+  background-color: white;
+  text-align: center;
+  padding: 20px 15px; /* Reduced padding for mobile */
+  margin: 0 auto;
+  max-width: 1200px; /* Reduce max-width to fit smaller screens */
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 70px; /* Keeps space from navbar */
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-title {
+  font-size: 32px; /* Reduced title size for mobile */
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #EF4444;
+  padding: 0 10px; /* Add a bit of padding for better fit */
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjusted grid for mobile */
+  gap: 1rem;
+  justify-content: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.skill-card {
+  background-color: #f4f4f9;
+  padding: 1rem; /* Reduced padding for compact cards */
+  border-radius: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px); /* Slightly reduced hover effect */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skill-image {
+  width: 100px; /* Reduced image size */
+  height: 100px;
+  object-fit: contain;
+  margin: 0 auto 0.5rem; /* Reduced margin for compact layout */
+}
+
+.skill-name {
+  font-size: 1rem; /* Smaller skill name */
+  font-weight: 600;
+  color: #333;
+}
+
+.skill-info {
+  color: #4b5563;
+  font-size: 0.75rem; /* Smaller info text */
+  margin-top: 0.25rem; /* Reduced margin */
+}
+
+.skill-level {
+  display: inline-block;
+  margin-top: 0.75rem; /* Slightly reduced margin */
+  background-color: #EF4444;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .skill-container {
+    padding: 20px 10px; /* Reduced padding further */
+  }
+
+  .skill-title {
+    font-size: 28px; /* Smaller title for smaller screens */
+    margin-bottom: 1rem;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Even smaller columns on mobile */
+    gap: 0.75rem; /* Smaller gap between cards */
+  }
+
+  .skill-card {
+    padding: 0.8rem; /* Smaller padding for mobile */
+  }
+
+  .skill-name {
+    font-size: 0.9rem; /* Further reduced skill name font */
+  }
+
+  .skill-info {
+    font-size: 0.7rem; /* Smaller font for skill info */
+  }
+
+  .skill-level {
+    font-size: 0.65rem; /* Further reduced font for skill level */
+    padding: 0.35rem 0.7rem; /* Reduced padding */
+  }
+}

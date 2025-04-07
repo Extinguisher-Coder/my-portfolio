@@ -1,0 +1,128 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  /* background: linear-gradient(to bottom, #31353a 0%, #EF4444 40%, #EF4444 60%, #31353a 100%); */
+  background: #31353a;
+  color: white;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+  z-index: 999;
+  /* Ensure navbar is fixed */
+  
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    border-bottom: 1px solid  #EF4444;
+      
+}
+
+.logo{
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-item{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px;
+  transition: color 0.3s;
+}
+
+.nav-item:hover, .active {
+  color: #EF4444;
+}
+
+.contact-btn {
+  border: 1px solid white;
+  background: #31353a;
+  border-radius: 25px;
+  padding: 8px 15px;
+}
+
+.mobile-menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1180px){
+  .nav-links {
+    display: none;
+  }
+
+  .nav-item:hover, .active {
+    color:#31353a;
+  }
+  
+  .nav-links-mobile{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #EF4444;
+    width: 40%;
+    right: 0;
+    top: 60px;
+    height: 100vh;
+    transition: all 0.5s ease-out;
+    
+
+  }
+
+  .nav-item{
+    display: table;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    
+  }
+
+  .contact-btn{
+    border: none;
+  }
+
+  .mobile-menu-icon{
+    display: block;
+    position: absolute;
+    color: white;
+    /* background-color:#EF4444; */
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+
+  }
+
+  .logo{
+    font-size: 20px;
+    
+  }
+
+}
+

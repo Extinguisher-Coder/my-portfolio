@@ -1,0 +1,101 @@
+/* Prevent horizontal overflow */
+body, .cv-page {
+  background: linear-gradient(to left, #EF4444, #31353a);
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.cv-page {
+  padding: 20px 10px 100px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  overflow-x: hidden;  /* Prevents horizontal scroll */
+}
+
+.cv-container {
+  width: 100%;  /* Ensure full width */
+  max-width: 100%;  /* Ensure no overflow on mobile */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 15px;  /* Prevent content from touching the edges */
+  box-sizing: border-box;  /* Ensure padding doesn't cause overflow */
+}
+
+.cv-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  word-wrap: break-word;  /* Prevent long words from breaking the layout */
+}
+
+/* Fullscreen responsive iframe */
+.cv-viewer {
+  width: 100%;
+  height: 90vh;  /* Default height */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* Fixed Download Button */
+.download-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #EF4444;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.download-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .cv-page {
+    padding: 10px 5px;  /* Reduce padding on small screens */
+  }
+
+  .cv-title {
+    font-size: 24px;  /* Smaller title size for mobile */
+    padding: 0 10px; /* Add padding around title for better fit */
+    text-align: left;  /* Adjust text alignment for mobile */
+  }
+
+  .cv-container {
+    width: 100%;  /* Ensure the container takes up full width */
+    max-width: 100%;  /* No max width to prevent overflow */
+    padding: 0 10px;  /* Prevent content from touching the edges */
+    gap: 15px;  /* Reduced gap for smaller screens */
+  }
+
+  .cv-viewer {
+    height: 70vh;  /* Set iframe to take 70% of the screen height on mobile */
+    overflow: auto;  /* Enable scrolling inside the iframe */
+  }
+
+  .download-btn {
+    padding: 12px 18px;  /* Smaller button on mobile */
+    font-size: 14px;
+    bottom: 10px;  /* Adjust bottom position for more space */
+    right: 10px;   /* Adjust right position for better placement */
+  }
+}
